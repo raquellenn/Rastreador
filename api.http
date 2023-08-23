@@ -12,3 +12,9 @@ Content-Type: application/json
     "destination_id": "2"
 
 }
+
+###Coisas do mapa
+
+###pegar o place_id
+
+GET http://localhost:3000/places=?text=rua dom silverio, juiz de fora, 394

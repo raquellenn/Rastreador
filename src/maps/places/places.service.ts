@@ -6,7 +6,7 @@ import { ConfigService } from '@nestjs/config';
 export class PlacesService {
     constructor(private googleMapsClient: GoogleMapsClient, private configService: ConfigService) {}
 
-    async findPlace(text: string) {
+    async findPlaces(text: string) {
         const { data } = await this.googleMapsClient.findPlaceFromText({
             params: {
                 input: text, 

@@ -2,8 +2,10 @@ import { Module } from '@nestjs/common';
 import { PlacesController } from './places/places.controller';
 import { PlacesService } from './places/places.service';
 import { Client as GoogleMapsClient} from '@googlemaps/google-maps-services-js';
+import { ConfigModule } from '@nestjs/config';
 
 @Module({
+  imports: [ConfigModule.forRoot({ isGlobal: true })],
   controllers: [PlacesController],
   providers: [PlacesService, {
     provide: GoogleMapsClient,
