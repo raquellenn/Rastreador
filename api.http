@@ -9,6 +9,6 @@ Content-Type: application/json
 {
     "name": "route test 1",
     "source_id": "1",
-    "destination_id": "2",
+    "destination_id": "2"
 
 }
